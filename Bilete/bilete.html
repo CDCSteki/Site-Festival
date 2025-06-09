@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilete</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../Bilete/bilete.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="nav-tel">
+            <span class="hamburger"><i class="fas fa-bars"></i></span>
+            <a class="logo-tel" href="../index.html"><img src="../principal/imagini_principal/logo.png" class="logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../Despre/despre.html">Festival</a></li>
+                <li><a href="../Artisti/artisti.html">Artiști</a></li>
+                <li><a href="../Program/program.html">Program</a></li>
+                <li class="nav-logo"><a href="../index.html" class="lo-fara"><img src="../principal/imagini_principal/logo.png" class="logo"></a></li>
+                <li><a href="../Bilete/bilete.html" class="activ">Bilete</a></li>
+                <li><a href="../Recenzii/recenzii.html">Recenzii</a></li>
+                <li><a href="../Contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <img src="../principal/imagini_principal/radial.png" class="radial">
+        <h1 class="princ">Bilete</h1>
+        <div class="ticket-category">
+            <h2>Acces festival</h2>
+
+            <div class="ticket" id="general">
+                <div class="info">
+                    <div class="imagine rosu"></div>
+                    <div class="info-imagine">
+                        <div class="info-sus">
+                            <h3>Acces General</h3>
+                            <p>Disponibilitate limitată</p>
+                            <span class="price">159€</span>
+                        </div>
+                        <button class="details-btn" onclick="toggleDetails('general-details')">Detalii</button>
+                    </div>
+                </div>
+                <div class="details" id="general-details">
+                    <div class="detalii-text">
+                        <p>Trăiește o experiență de neuitat la Castel.</p>
+                        <p> 3 zile pline de distracție, spectacole artistice, comedie de stand-up, zonă de modă și
+                            târg, vânzători de mâncare și băuturi atent alese și o gamă variată de activități de zi la
+                            alegere.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ticket" id="21">
+                <div class="info">
+                    <div class="imagine albastru"></div>
+                    <div class="info-imagine">
+                        <div class="info-sus">
+                            <h3>21</h3>
+                            <p>Disponibilitate limitată</p>
+                            <span class="price">119€</span>
+                        </div>
+                        <button class="details-btn" onclick="toggleDetails('21-details')">Detalii</button>
+                    </div>
+                </div>
+                <div class="details" id="21-details">
+                    <div class="detalii-text">
+                        <p>Trăiește o experiență de neuitat la Castel.</p>
+                        <p> 3 zile pline de distracție, spectacole artistice, comedie de stand-up, zonă de modă și
+                            târg, vânzători de mâncare și băuturi atent alese și o gamă variată de activități de zi la
+                            alegere.</p>
+                        <p>*Ești eligibil pentru acest bilet dacă vei avea (maximum) 21 de ani în ultima zi a
+                            festivalului (23 August).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ticket" id="vip">
+                <div class="info">
+                    <div class="imagine roz"></div>
+                    <div class="info-imagine">
+                        <div class="info-sus">
+                            <h3>VIP</h3>
+                            <p>Disponibilitate limitată</p>
+                            <span class="price">299€</span>
+                        </div>
+                        <button class="details-btn" onclick="toggleDetails('vip-details')">Detalii</button>
+                    </div>
+                </div>
+                <div class="details" id="vip-details">
+                    <div class="detalii-text fara">
+                        <p>Imbunatateste-ti experienta alegand biletul VIP.
+                            Vei avea acces la zone si facilitati exclusive care iti vor aduce cea mai speclatuloasa
+                            aventura muzicala.</p>
+                    </div>
+                    <div class="lista-detalii">
+                        <p>Prin biletul VIP vei avea acces la urmatoarele:</p>
+                        <ul>
+                            <li>Intrare separată</li>
+                            <li>Salonane exclusive</li>
+                            <li>Toalete separate</li>
+                            <li>Dulapuri dedicate</li>
+                            <li>Încărcătoare</li>
+                            <li>Priveliște asupra festivalului de pe o platformă elevată</li>
+                            <li>Şansa de a întalni artiştii tăi preferaţi</li>
+                            <li>Băuturi premium</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ticket" id="ultra-vip">
+                <div class="info">
+                    <div class="imagine violet"></div>
+                    <div class="info-imagine">
+                        <div class="info-sus">
+                            <h3>Ultra VIP</h3>
+                            <p>Disponibilitate limitată</p>
+                            <span class="price">599€</span>
+                        </div>
+                        <button class="details-btn" onclick="toggleDetails('ultra-vip-details')">Detalii</button>
+                    </div>
+                </div>
+                <div class="details" id="ultra-vip-details">
+                    <div class="text-detalii fara">
+                        <p>Imbunatateste-ti experienta alegand biletul Ultra-VIP.
+                            Vei avea acces la zone si facilitati exclusive care iti vor aduce cea mai speclatuloasa
+                            aventura muzicala.</p>
+                    </div>
+                    <div class="lista-detalii">
+                        <p>Prin biletul Ultra-VIP vei avea acces la urmatoarele:</p>
+                        <ul>
+                            <li>Privelişte minunată asupra scenei principale</li>
+                            <li>Cocktail Bar</li>
+                            <li>Garderobă gratuită</li>
+                            <li>Salonane exclusive</li>
+                            <li>Toalete separate</li>
+                            <li>Încărcătoare</li>
+                            <li>Mâncare à la carte de la DaPino</li>
+                            <li>Bere artizanală, vinuri și băuturi spirtoase selecționate</li>
+                            <li>Local cu cafea de specialitate</li>
+                            <li>After-party exclusiv</li>
+                            <li>Şansa de a întalni artiştii tăi preferaţi</li>
+                            <li>Intrări separate</li>
+                            <li>Locuri de parcare dedicate</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ticket-category">
+            <h2>Acces camping</h2>
+            <div class="ticket" id="camping">
+                <div class="info">
+                    <div class="imagine gri"></div>
+                    <div class="info-imagine">
+                        <div class="info-sus">
+                            <h3>Camping</h3>
+                            <p>Disponibilitate limitată</p>
+                            <span class="price">69€</span>
+                        </div>
+                        <button class="details-btn" onclick="toggleDetails('camping-details')">Detalii</button>
+                    </div>
+                </div>
+                <div class="details" id="camping-details">
+                    <div class="detalii-text">
+                        <p>Rezervă-ți locul în EC Village la cel mai bun preț!</p>
+                        <p>Inclus: o zonă specială pentru cortul tău personal.</p>
+                        <p>Nu este inclus: cortul deja montat.</p>
+                        <p>*Acces gratuit pentru minori până la 7 ani.</p>
+                        <p>**Acest bilet îți oferă acces în EC Village pe întreaga perioadă a festivalului (3 nopți).</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="foot">
+            <div class="imagine-logo">
+                <a href="../index.html"><img src="../principal/imagini_principal/logo.png" class="logo"></a>
+            </div>
+            <div class="footer-links">
+                <a href="../Despre/despre.html">Festival</a>
+                <a href="../Artisti/artisti.html">Artiști</a>
+                <a href="../Program/program.html">Program</a>
+                <a href="../Bilete/bilete.html" >Bilete</a>
+                <a href="../Recenzii/recenzii.html">Recenzii</a>
+                <a href="../Contact/contact.html">Contact</a>
+                <p>Copyright © 2025 Electric Castle Festival Toate Drepturile Rezervate</p>
+            </div>
+            <div class="socials">
+                <a href="https://www.instagram.com/cozidavid/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/david.cozi.3/?locale=ro_RO"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/stecherila"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../principal/hamburger.js"></script>
+    <script src="../Bilete/detalii.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="artisti.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="nav-tel">
+            <span class="hamburger"><i class="fas fa-bars"></i></span>
+            <a class="logo-tel" href="../index.html" ><img src="../principal/imagini_principal/logo.png" class="logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../Despre/despre.html">Festival</a></li>
+                <li><a href="../Artisti/artisti.html" class="activ">Artiști</a></li>
+                <li><a href="../Program/program.html">Program</a></li>
+                <li class="nav-logo"><a href="../index.html" class="lo-fara"><img src="../principal/imagini_principal/logo.png" class="logo"></a></li>
+                <li><a href="../Bilete/bilete.html">Bilete</a></li>
+                <li><a href="../Recenzii/recenzii.html">Recenzii</a></li>
+                <li><a href="../Contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Artişti</h1>
+        <div class="container">
+            <div class="filter-bar">
+                <div class="filtru">
+                <p>Filtrează după</p>
+                <select id="genre-filter">
+                    <option value="all">Toate</option>
+                    <option value="Trap">Trap</option>
+                    <option value="Hip-Hop">Hip-Hop</option>
+                    <option value="EDM">EDM</option>
+                    <option value="Pop">Pop</option>
+                </select>
+            </div>
+                <input type="text" id="search-bar" placeholder="Cauta artisti...">
+            </div>
+
+            <div class="artists-grid" id="artists-grid">
+                <img src="../principal/imagini_principal/radial.png" class="radial">
+                <div class="artist-card" data-name="ASAP Rocky" data-genre="Hip-Hop/Rap">
+                    <a href="../Artisti-individuali/asap.html" alt="ASAP Rocky"><img src="../Artisti/poze-artisti/Asap.png"></a>
+                    <div class="artist-info">
+                        <h3>ASAP Rocky</h3>
+                        <p>Hip-Hop/Rap</p>
+                    </div>
+                </div>
+                <div class="artist-card" data-name="Azteca" data-genre="Trap">
+                    <a href="../Artisti-individuali/azteca.html"><img src="../Artisti/poze-artisti/azteca.png" alt="Azteca"></a>
+                    <div class="artist-info">
+                        <h3>Azteca</h3>
+                        <p>Trap</p>
+                    </div>
+                </div>
+                <div class="artist-card" data-name="Bitza" data-genre="Hip-Hop">
+                    <a href="../Artisti-individuali/bitza.html"><img src="../Artisti/poze-artisti/Bitza.png" alt="Bitza"></a>
+                    <div class="artist-info">
+                        <h3>Bitza</h3>
+                        <p>Hip-Hop</p>
+                    </div>
+                </div>
+                <div class="artist-card" data-name="David Guetta" data-genre="EDM">
+                    <a href="../Artisti-individuali/david.html"><img src="../Artisti/poze-artisti/David.png" alt="David Guetta"></a>
+                    <div class="artist-info">
+                        <h3>David Guetta</h3>
+                        <p>EDM</p>
+                    </div>
+                </div>
+                <div class="artist-card" data-name="Irina Rimes" data-genre="Pop">
+                    <a href="../Artisti-individuali/irina.html"><img src="../Artisti/poze-artisti/Irina.png" alt="Irina Rimes"></a>
+                    <div class="artist-info">
+                        <h3>Irina Rimes</h3>
+                        <p>Pop</p>
+                    </div>
+                </div>
+                <div class="artist-card" data-name="Marshmello" data-genre="EDM">
+                    <a href="../Artisti-individuali/marshmello.html"><img src="../Artisti/poze-artisti/Marshmel.png" alt="Marshmello"></a>
+                    <div class="artist-info">
+                        <h3>Marshmello</h3>
+                        <p>EDM</p>
+                    </div>
+                </div>
+                <div class="artist-card" data-name="Nane" data-genre="Trap">
+                    <a href="../Artisti-individuali/nane.html"><img src="../Artisti/poze-artisti/Nane.png" alt="Nane"></a>
+                    <div class="artist-info">
+                        <h3>Nane</h3>
+                        <p>Trap</p>
+                    </div>
+                </div>
+                <div class="artist-card" data-name="Skrillex" data-genre="EDM">
+                    <a href="../Artisti-individuali/skrillex.html"><img src="../Artisti/poze-artisti/Skrillex.png" alt="Skrillex"></a>
+                    <div class="artist-info">
+                        <h3>Skrillex</h3>
+                        <p>EDM</p>
+                    </div>
+                </div>
+                <div class="artist-card" data-name="Smiley" data-genre="Pop">
+                    <a href="../Artisti-individuali/smiley.html"><img src="../Artisti/poze-artisti/Smiley.png" alt="Smiley"></a>
+                    <div class="artist-info">
+                        <h3>Smiley</h3>
+                        <p>Pop</p>
+                    </div>
+                </div>
+                <div class="artist-card" data-name="Subcarpati" data-genre="Hip-Hop/Folclor">
+                    <a href="../Artisti-individuali/subcarpati.html"><img src="../Artisti/poze-artisti/Subcarp.png" alt="Subcarpati"></a>
+                    <div class="artist-info">
+                        <h3>Subcarpati</h3>
+                        <p>Hip-Hop/Folclor</p>
+                    </div>
+                </div>
+                <div class="artist-card" data-name="Travis Scott" data-genre="Hip-Hop/Rap">
+                    <a href="../Artisti-individuali/travis.html"><img src="../Artisti/poze-artisti/Travis.png" alt="Travis Scott"></a>
+                    <div class="artist-info">
+                        <h3>Travis Scott</h3>
+                        <p>Hip-Hop/Rap</p>
+                    </div>
+                </div>
+                <div class="artist-card" data-name="Yeat" data-genre="Hip-Hop/Rap">
+                    <a href="../Artisti-individuali/yeat.html"><img src="../Artisti/poze-artisti/Yeat.png" alt="Yeat"></a>
+                    <div class="artist-info">
+                        <h3>Yeat</h3>
+                        <p>Hip-Hop/Rap</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="foot">
+            <div class="imagine-logo">
+                <a href="../index.html"><img src="../principal/imagini_principal/logo.png" class="logo"></a>
+            </div>
+            <div class="footer-links">
+                <a href="../Despre/despre.html">Festival</a>
+                <a href="../Artisti/artisti.html">Artiști</a>
+                <a href="../Program/program.html">Program</a>
+                <a href="../Bilete/bilete.html">Bilete</a>
+                <a href="../Recenzii/recenzii.html">Recenzii</a>
+                <a href="../Contact/contact.html">Contact</a>
+                <p>Copyright © 2025 Electric Castle Festival Toate Drepturile Rezervate</p>
+            </div>
+            <div class="socials">
+                <a href="https://www.instagram.com/cozidavid/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/david.cozi.3/?locale=ro_RO"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/stecherila"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../principal/hamburger.js"></script>
+    <script src="../Artisti/filtrare.js"></script>
+</body>
+
+</html>

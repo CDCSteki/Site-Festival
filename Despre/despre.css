@@ -1,0 +1,357 @@
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    margin: 0px;
+    background: #0A0C10;
+    text-align: justify;
+    line-height: 1.7;
+    font-weight: 550;
+    color: #D8D8D8;
+}
+span.titlu{
+    color: #E52996;
+}
+.tel{
+    display: none;
+}
+main {
+    width: 77.77%;
+    margin: auto;
+}
+
+header {
+    background: #FFFFFF;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+nav {
+    width: 80%;
+    margin: auto;
+}
+
+.logo-tel {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+}
+
+nav ul li a {
+    color: #D8D8D8;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: 550;
+    border-radius: 5px;
+}
+
+nav ul li a img.nav-logo {
+    height: 30px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 86px;
+    margin-bottom: 50px;
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 38%));
+    background-clip: text;
+    color: transparent;
+    width: 100%;
+}
+
+.radial{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+.text-isto,.text-despre,.editii-wrap{
+    position: relative;
+}
+.istoric {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 41px;
+    align-items: center;
+    position: relative;
+}
+
+.text-isto {
+    width: 50%;
+}
+
+.image {
+    width: 41.5%;
+}
+
+.image img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    font-size: 18px;
+}
+
+.editii {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.editii div {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.editii img {
+    width: 270px;
+    height: 450px;
+}
+
+.editii::-webkit-scrollbar {
+    display: none;
+}
+
+.editii-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5% auto;
+    gap: 10px;
+}
+
+#backBtn,
+#nextBtn {
+    cursor: pointer;
+}
+
+#nextBtn {
+    margin: 10px;
+}
+
+.editii div img:hover {
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+}
+.editii div img:not(:hover){
+    transition: 0.5s ease-in-out;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.foot {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-links p {
+    grid-column: 1/-1;
+}
+
+.footer-links a {
+    color: #D8D8D8;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.footer-links a img.footer-logo {
+    height: 30px;
+}
+
+footer .socials {
+    display: flex;
+    justify-content: center;
+}
+
+footer .socials i {
+    font-size: 30px;
+    color: #B9B9B9;
+    margin-right: 10px;
+}
+
+footer p{
+    font-size: 16px;
+}
+.logo{
+    width: 75px;
+    height: 75px;
+}
+nav ul li a.activ{
+    color:#892066;
+}
+nav ul li a:hover{
+    background-color: #892066;
+    color:#D8D8D8;
+}
+.lo-fara:hover{
+    background-color: transparent;
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+    h1 {
+        font-size: 35px;
+        width: 100%;
+    }
+
+    .istoric {
+        display: block;
+    }
+
+    .istoric .image {
+        float: right;
+        width: 40%;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .ed {
+        clear: both;
+    }
+
+    .text-isto {
+        width: 100%;
+    }
+
+
+    footer .socials {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    main {
+        width: 85%;
+    }
+
+    .nav-tel{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-logo {
+        display: none;
+    }
+
+    .nav-tel .logo-tel {
+        display: block;
+        position: relative;
+    }
+    p{
+        font-size: 16px;
+    }
+    .hamburger {
+        display: block;
+        font-size: 30px;
+        color: #fff;
+        margin-left: auto;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    h1 {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .text-isto{
+        display: none;
+    }
+    .tel{
+        display: block;
+    }
+    .fara-tel{
+        display: none;
+    }
+    .image{
+        width: 100%;
+    }
+    footer {
+        font-size: 14px;
+        padding: 0;
+        padding-top: 10px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    .foot {
+        width: 85%;
+        gap: 10px;
+    }
+
+    footer .socials {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .footer-links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+}

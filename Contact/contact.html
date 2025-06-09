@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../Contact/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="nav-tel">
+            <span class="hamburger"><i class="fas fa-bars"></i></span>
+            <a class="logo-tel" href="../index.html" ><img src="../principal/imagini_principal/logo.png" class="logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../Despre/despre.html">Festival</a></li>
+                <li><a href="../Artisti/artisti.html">Artiști</a></li>
+                <li><a href="../Program/program.html">Program</a></li>
+                <li class="nav-logo"><a href="../index.html" class="lo-fara"><img src="../principal/imagini_principal/logo.png" class="logo"></a></li>
+                <li><a href="../Bilete/bilete.html">Bilete</a></li>
+                <li><a href="../Recenzii/recenzii.html">Recenzii</a></li>
+                <li><a href="../Contact/contact.html" class="activ">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <img src="../principal/imagini_principal//radial-albastru.png" class="radial albastru" >
+            <div class="contactInfo">
+                <h1>Contact</h1>
+                <p>Contactează-ne în legătură cu orice întrebare prin următoarele metode:</p>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <div class="text">
+                        <p>0712456789</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <p>david.cozi9@yahoo.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <h1>Formular</h1>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nume, Prenume</label>
+                        <input type="text" id="name" name="name">
+                        <div class="error" id="nameError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefon">Număr de telefon</label>
+                        <input type="telefon" id="telefon" name="telefon">
+                        <div class="error" id="telError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                        <div class="error" id="emailError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mesaj</label>
+                        <textarea id="message" name="message"></textarea>
+                        <div class="error" id="messageError"></div>
+                    </div>
+                    <button type="button" class="submit-btn" onclick="validateForm()">Trimite</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="foot">
+            <div class="imagine-logo">
+                <a href="../index.html"><img src="../principal/imagini_principal/logo.png" class="logo"></a>
+            </div>
+            <div class="footer-links">
+                <a href="../Despre/despre.html">Festival</a>
+                <a href="../Artisti/artisti.html">Artiști</a>
+                <a href="../Program/program.html">Program</a>
+                <a href="../Bilete/bilete.html">Bilete</a>
+                <a href="../Recenzii/recenzii.html">Recenzii</a>
+                <a href="../Contact/contact.html">Contact</a>
+                <p>Copyright © 2025 Electric Castle Festival Toate Drepturile Rezervate</p>
+            </div>
+            <div class="socials">
+                <a href="https://www.instagram.com/cozidavid/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/david.cozi.3/?locale=ro_RO"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/stecherila"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../principal/hamburger.js"></script>
+    <script src="../Contact/form.js"></script>
+</body>
+
+</html>

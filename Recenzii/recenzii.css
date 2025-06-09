@@ -1,0 +1,353 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    margin: 0px;
+    background: #0A0C10;
+    text-align: justify;
+    line-height: 1.7;
+    font-weight: 550;
+    color: #D8D8D8;
+    min-height: 100vh;
+    position: relative;
+}
+p{
+    font-size: 18px;
+}
+
+main {
+    width: 77.77%;
+    margin: auto;
+}
+
+header {
+    background: #FFFFFF;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+}
+nav{
+    width: 80%;
+    margin: auto;
+}
+.logo-tel{
+    display: none;
+}
+.hamburger{
+    display: none;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+}
+
+nav ul li a {
+    color: #D8D8D8;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: 550;
+    border-radius: 5px;
+}
+nav ul li a.activ{
+    color:#892066;
+}
+nav ul li a:hover{
+    background-color: #892066;
+    color:#D8D8D8;
+}
+
+nav ul li a img.nav-logo {
+    height: 30px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 86px;
+    margin-bottom: 54px;
+    background: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,38%));
+    background-clip: text;
+    color: transparent;
+    width:100%;
+    text-align: left;
+}
+.princ{
+    margin-bottom: 0px;
+    text-align: center;
+    width: 100%;
+}
+.logo{
+    width: 75px;
+    height: 75px;
+}
+.lo-fara:hover{
+    background-color: transparent;
+}
+.rec-om{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.persoana{
+    display: flex;
+    border: 2px solid white;
+    gap:20px;
+    padding: 20px;
+    border-radius: 15px;
+}
+.persoana .paragraf{
+    display: flex;
+    align-items: center;
+}
+.imagine-persoana img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
+.rec-om p, .nume{
+    font-size: 25px;
+    margin: 0px;
+}
+.rec-om p{
+    margin-bottom: 5px;
+}
+.nume{
+    display: block;
+    text-align: center;
+}
+.ghilimele{
+    color: #892066;
+}
+
+.artisti{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.artist{
+    padding:20px;
+    border: 2px solid #D8D8D8;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.artist img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.artist div{
+    display: flex;
+    justify-items: center;
+    height: 50%;
+}
+.artist p{
+    margin: auto;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.foot {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-links p {
+    grid-column: 1/-1;
+}
+
+.footer-links a {
+    color: #D8D8D8;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.footer-links a img.footer-logo {
+    height: 30px;
+}
+
+footer .socials {
+    display: flex;
+    justify-content: center;
+}
+
+footer .socials i {
+    font-size: 30px;
+    color: #B9B9B9;
+    margin-right: 10px;
+}
+
+footer p{
+    font-size: 16px;
+}
+.radial{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+.albastru{
+    opacity: 0.3;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    h1 {
+        font-size: 35px;
+        width: 100%;
+    }
+    .rec-om p, .nume, h2{
+        font-size: 20px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .artisti{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .tab{
+        grid-column: 1/3;
+        justify-content: center;
+        width: 50%;
+        margin: auto;
+    }
+
+    footer .socials {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    main {
+        width: 85%;
+    }
+
+    .nav-tel{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-logo {
+        display: none;
+    }
+
+    .nav-tel .logo-tel {
+        display: block;
+        position: relative;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 30px;
+        color: #fff;
+        margin-left: auto;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    h1 {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .rec-om p, .nume, h2{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+    .artisti{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 0;
+        padding-top: 10px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    .foot {
+        width: 85%;
+        gap: 10px;
+    }
+
+    footer .socials {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .footer-links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    .persoana{
+        flex-direction: column;
+        align-items: center;
+    }
+}

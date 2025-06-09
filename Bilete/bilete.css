@@ -1,0 +1,397 @@
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    margin: 0px;
+    background: #0A0C10;
+    text-align: justify;
+    line-height: 1.7;
+    font-weight: 550;
+    color: #D8D8D8;
+    min-height: 100vh;
+    position: relative;
+}
+p{
+    font-size: 18px;
+}
+
+main {
+    width: 77.77%;
+    margin: auto;
+    position: relative;
+}
+
+header {
+    background: #FFFFFF;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+}
+nav{
+    width: 80%;
+    margin: auto;
+}
+.logo-tel{
+    display: none;
+}
+.hamburger{
+    display: none;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+}
+
+nav ul li a {
+    color: #D8D8D8;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: 550;
+    border-radius: 5px;
+}
+
+nav ul li a.activ{
+    color:#892066;
+}
+nav ul li a:hover{
+    background-color: #892066;
+    color:#D8D8D8;
+}
+
+nav ul li a img.nav-logo {
+    height: 30px;
+}
+
+h1 ,h2{
+    font-size: 40px;
+    margin-top: 86px;
+    margin-bottom: 54px;
+    background: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,38%));
+    background-clip: text;
+    color: transparent;
+    width:80%;
+    text-align: left;
+}
+.princ{
+    margin-bottom: 0px;
+    text-align: center;
+    width: 100%;
+}
+.ticket-category{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.info{
+    margin-left: auto;
+    border: solid #D8D8D8;
+    padding:  10px 20px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.imagine{
+    height: 100%;
+    width: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px 0 0 10px;
+}
+.rosu{
+    background-color: #72032B;
+}
+.albastru{
+    background-color: #2C578B;
+}
+.roz{
+    background-color: #E52996;
+}
+.violet{
+    background-color: #892066;
+}
+.gri{
+    background-color: #7D7E80;
+}
+.info-imagine{
+    width: 90%;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.info-sus{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+}
+h2{
+    font-size: 40px;
+    margin-bottom: 0;
+}
+h3{
+    font-size: 30px;
+    margin: 0;
+}
+.info-sus p{
+    text-align: end;
+}
+.price{
+    text-align: end;
+    font-size: 30px;
+}
+.details-btn{
+    width: 100px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 15px;
+    font-family: "Poppins", Arial, sans-serif;
+    cursor: pointer;
+}
+.details{
+    display: none;
+    border: solid #D8D8D8;
+    border-radius: 15px;
+    padding: 20px;
+}
+.ticket.active .info {
+    border-radius: 15px 15px 0 0;
+}
+
+.ticket.active .details {
+    border-radius: 0 0 15px 15px;
+}
+.ticket.active .imagine{
+    border-radius: 10px 0 0 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+footer p{
+    font-size: 16px;
+}
+
+.foot {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-links p {
+    grid-column: 1/-1;
+}
+
+.footer-links a {
+    color: #D8D8D8;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.footer-links a img.footer-logo {
+    height: 30px;
+}
+
+footer .socials {
+    display: flex;
+    justify-content: center;
+}
+
+footer .socials i {
+    font-size: 30px;
+    color: #B9B9B9;
+    margin-right: 10px;
+}   
+
+.logo{
+    width: 75px;
+    height: 75px;
+}
+.lo-fara:hover{
+    background-color: transparent;
+}
+.radial{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    h1,h2{
+        font-size: 35px;
+    }
+
+    h1{
+        margin-bottom: 10px;
+    }
+
+    .fara{
+        display: none;
+    }
+
+    .info-sus p{
+        text-align: center;
+    }
+
+    footer, footer p{
+        font-size: 14px;
+    }
+
+    footer .socials {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    p{
+        font-size: 16px;
+    }
+    main {
+        width: 85%;
+        min-height: 65vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-tel{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-logo {
+        display: none;
+    }
+
+    .nav-tel .logo-tel {
+        display: block;
+        position: relative;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 30px;
+        color: #fff;
+        margin-left: auto;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    h1 {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    h2{
+        font-size:25px;
+    }
+    
+    .info-sus p{
+        display: none;
+    }
+
+    .info-sus{
+        display: flex;
+        justify-content: space-between  ;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 0;
+        padding-top: 10px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+    h3,.price{
+        font-size: 25px;
+    }
+
+    .foot {
+        width: 85%;
+        gap: 10px;
+    }
+
+    footer .socials {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .footer-links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    .info-imagine{
+        margin: 0;
+    }
+    .info{
+        padding-top: 30px;
+    }
+
+    .imagine{
+        width: 100%;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 13px 13px 0 0;
+    }
+    .ticket.active .imagine{
+        border-radius: 13px 13px 0 0;
+    }
+}
